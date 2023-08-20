@@ -27,7 +27,8 @@ router.post('/account', function(req, res) {
   let id = shortid.generate();
   // 寫入文件
   db.get("accounts").unshift({id:id, ...req.body}).write();
-  res.send("新增紀錄");
+  // 成功提醒
+  res.render("success",{msg: "添加成功喔~~",url:"/account"});
 });
 
 module.exports = router;
