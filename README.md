@@ -1,3 +1,4 @@
+![example workflow](https://github.com/DennisLin0125/account/actions/workflows/node.js.yml/badge.svg)
 # Node.js 
 
 ## Folder tree
