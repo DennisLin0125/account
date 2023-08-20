@@ -2,19 +2,19 @@
   "accounts": [
     {
       "id": "o7phlg4cT",
-      "title": "買滑鼠",
-      "time": "2023-08-20",
+      "title": "吃早餐",
+      "time": "2023-08-25",
       "type": "-1",
-      "account": "359",
-      "remarks": "看張三買一個我也買一個"
+      "account": "330",
+      "remarks": "喝奶茶"
     },
     {
       "id": "O9qnVptuo",
-      "title": "買滑鼠",
-      "time": "2023-08-20",
-      "type": "-1",
-      "account": "359",
-      "remarks": "看張三買一個我也買一個"
+      "title": "薪資",
+      "time": "2023-08-05",
+      "type": "1",
+      "account": "35900",
+      "remarks": "領錢"
     },
     {
       "id": "b6k-O8dOw",

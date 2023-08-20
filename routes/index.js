@@ -13,7 +13,10 @@ const shortid = require('shortid');
 
 // 記帳本列表
 router.get('/account', function(req, res) {
-  res.render("list");
+  // 獲取所有帳單訊息
+  let accounts = db.get("accounts").value();
+  console.log(accounts)
+  res.render("list",{accounts:accounts});
 });
 
 // 添加紀錄
