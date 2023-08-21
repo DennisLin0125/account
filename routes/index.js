@@ -15,7 +15,6 @@ const shortid = require('shortid');
 router.get('/account', function(req, res) {
   // 獲取所有帳單訊息
   let accounts = db.get("accounts").value();
-  console.log(accounts)
   res.render("list",{accounts:accounts});
 });
 
@@ -41,7 +40,7 @@ router.get("/account/:id", function(req, res){
   // 刪除 
   db.get('accounts').remove({id:id}).write();
   // 響應
-  res.send("刪除成功");
+  res.render("success",{msg: "刪除成功喔~~",url:"/account"});
 });
 
 module.exports = router;
