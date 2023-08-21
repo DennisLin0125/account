@@ -34,4 +34,14 @@ router.post('/account', function(req, res) {
   res.render("success",{msg: "添加成功喔~~",url:"/account"});
 });
 
+// 刪除紀錄
+router.get("/account/:id", function(req, res){
+  // 獲取 param 的ID
+  let id = req.params.id;
+  // 刪除 
+  db.get('accounts').remove({id:id}).write();
+  // 響應
+  res.send("刪除成功");
+});
+
 module.exports = router;

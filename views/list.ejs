@@ -9,12 +9,26 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/css/list.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".checkbox").change(function() {
+                if (this.checked) {
+                    var itemId = $(this).data("item-id");
+                    $.get("/account/" + itemId, function(data) {
+                        alert(data);
+                        location.reload(); // 刷新頁面以更新內容
+                    });
+                }
+            });
+        });
+    </script>
 </head>
 <body>
     <div class="container text-center">
         <h1><i class="fas fa-piggy-bank"></i> 記帳本</h1>
         <hr />
-        <div class="row row-cols-4">
+        <div class="row row-cols-5">
     
             <% accounts.forEach(item => { %>
                 <div class="col">
@@ -29,6 +43,12 @@
                 <div class="col">
                     <span><%= item.account %> 元</span>
                 </div>
+                
+                <div class="col">
+                    <input type="checkbox" class="checkbox" data-item-id="<%= item.id %>" id="checkbox_<%= item.id %>">
+                    <label for="checkbox_<%= item.id %>">刪除</label>
+                </div>
+
             <% }) %>
              
         </div> 
