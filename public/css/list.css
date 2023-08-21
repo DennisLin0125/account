@@ -29,14 +29,40 @@ a:hover {
     color: #0056b3; /* 較深的藍色當滑鼠移過時 */
 }
 
-.row-cols-4 {
+.row-cols-5 {
     border: 1px solid #e1e5ea; /* 淺灰色邊框 */
     background-color: #ffffff; /* 白色背景 */
     padding: 10px; /* 加入間距 */
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* 輕微陰影效果 */
 }
 
-.col span {
-    display: block;
-    padding: 5px 0;
+.table th, .table td {
+    vertical-align: middle;
+}
+
+.checkbox {
+    display: none;
+}
+
+label {
+    cursor: pointer;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-color: #ffffff;
+    border: 1px solid #e1e5ea;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 24px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.checkbox:checked + label::after {
+    content: "X";
+    color: #dc3545; /* 紅色 */
+    font-weight: bold;
+}
+
+.table-hover .table-striped tbody tr:hover {
+    background-color: rgba(0, 0, 0, 0.05);
 }

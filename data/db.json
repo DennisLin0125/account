@@ -1,20 +1,12 @@
 {
   "accounts": [
     {
-      "id": "95ufCHEzn",
-      "title": "請客",
-      "time": "2023-09-02",
-      "type": "1",
-      "account": "250",
-      "remarks": "唱歌"
-    },
-    {
-      "id": "hVlOKcB3F",
-      "title": "請客",
-      "time": "2023-09-02",
-      "type": "1",
-      "account": "250",
-      "remarks": "唱歌"
+      "id": "9lIwGepfx",
+      "title": "領錢",
+      "time": "2023-09-15",
+      "type": "-1",
+      "account": "25000",
+      "remarks": "唱歌跳舞"
     },
     {
       "id": "NN0D5ED34",
