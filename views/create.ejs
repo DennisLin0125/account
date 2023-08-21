@@ -3,52 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/create.css">
     <title>添加紀錄</title>
 </head>
 <body>
     <div class="container">
-        <div class="form-group mx-sm-3 mb-2">
-            <h1>添加紀錄</h1>
-            <hr>
-        </div>
-    </div>
-    <div class="container">
+        <h1>添加紀錄</h1>
+        <hr>
+
         <form action="/account" method="post">
-            <label for="item">事項:</label>
-            <input
-                name="title" 
-                type="text"
-                id="item"
-            /><br>
+            <div class="mb-3">
+                <label for="item" class="form-label">事項</label>
+                <input name="title" type="text" class="form-control" id="title" aria-describedby="textHelp">
+            </div>
 
-            <label for="time">發生時間:</label>
-            <input 
-                name="time"
-                type="text"
-                id="item"
-            /><br>
+            <div class="mb-3">
+                <label for="time" class="form-label">發生時間</label>
+                <input name="time" type="text" class="form-control" id="time" aria-describedby="textHelp">
+            </div>
 
-            <label for="type">類型:</label>
-            <select name="type" id="type">
-                <option value="-1">支出</option>
-                <option value="1">收入</option>
-            </select><br>
+            <div class="mb-3">
+                <label for="type" class="form-label">類型</label>
+                <select class="form-select" name="type" id="type">
+                    <option value="-1">支出</option>
+                    <option value="1">收入</option>
+                </select>
+            </div>
 
-            <label for="type">金額:</label>
-            <input 
-                name="account"
-                type="text"
-                id="account"
-            /><br>
+            <div class="mb-3">
+                <label for="account" class="form-label">金額</label>
+                <input name="account" type="text" class="form-control" id="account" aria-describedby="textHelp">
+            </div>
+
+            <div class="mb-3">
+                <label for="remarks" class="form-label">備註</label>
+                <textarea name="remarks" id="remarks" cols="30" rows="2" class="form-control"></textarea>
+            </div>
             
-            <label for="remarks">備註:</label>
-            <textarea name="remarks" id="remarks" cols="30" rows="10"></textarea><br>
-            
-            <button type="submit" class="btn btn-primary btn-block">添加</button>
+            <button type="submit" class="btn btn-primary">添加</button>
         </form>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
-
 </html>

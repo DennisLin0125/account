@@ -1,5 +1,36 @@
 ![example workflow](https://github.com/DennisLin0125/account/actions/workflows/node.js.yml/badge.svg)
-# Node.js 
+
+# 專案介紹 : 網站記帳本
+
+### 環境需求 :  `Node.js`
+
+# 測試版本
+
+* `v18.17.0`
+
+# 使用技術
+
+* [express-generator](https://expressjs.com/en/starter/generator.html)
+* [ejs](https://ejs.co/)
+
+### 在 Local 端的安裝
+
+```bash
+npm i
+
+```
+
+### Server開啟
+
+```bash
+
+npm start
+
+```
+
+### 網站效果
+
+* 打開瀏覽器 http://localhost:3000/
 
 ## Folder tree
 
