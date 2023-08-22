@@ -34,9 +34,7 @@
                             <td><%= item.type==="-1" ? "支出" : "收入" %></td>
                             <td><%= item.account %> 元</td>
                             <td>
-                                <form action="/account/<%= item.id %>" method="get">
-                                    <button type="submit" class="btn btn-danger btn-sm">刪除</button>
-                                </form>
+                                <a class="btn btn-primary"  href="/account/<%= item.id %>" role="button">刪除</a>
                             </td>
                         </tr>
                     <% }) %>
